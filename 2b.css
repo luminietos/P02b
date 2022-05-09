@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    min-width: 500px;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    margin: 3px;
+}
+
+.container {
+    background: linear-gradient(#342f57, #584771, #825775);
+    color: white;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    /* display: inline-block; */
+    /*NOTE TO SELF: no max. height bc there's also*/
+    /*no max. number of items listed - can be as long as needed!!*/
+    min-width: 500px;
+    min-height: 100px;
+
+    width: 50%;
+    top: 50%;
+    border-radius: 15px;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.todo-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 30px;
+    /*ul item/task size*/
+    font-size: 20px;
+
+    min-height: 10vh;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    /*keeps header from sliding left/right on resize*/
+    min-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 17px;
+    padding: 20px;
+}
+
+p {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    min-width: 30%;
+}
+
+/*BUTTON STYLING*/
+#togglebtn {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: #342f57;
+
+    outline: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+#togglebtn:hover {
+    background-color: #825775;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+#what {
+    /*roughly the same width as the moon*/
+    width: 38px;
+}
+
+/*info/question box on hover*/
+#what:hover {
+    background-color: #57a178;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+/*clear button on hover*/
+#clear:hover {
+    background-color: #a16257;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.check {
+    padding-left: 9px;
+    padding-right: 6px;
+}
+
+.delete:hover {
+    color: rgb(248, 96, 96);
+    transition: all 0.4s ease;
+}
+
+.check:hover {
+    color: rgb(182, 243, 120);
+    transition: all 0.4s ease;
+}
+
+/*input field*/
+.todo-input, #what, #clear {
+    cursor: pointer;
+    background-color: white;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+}
+
+.todo-input {
+    width: 80%;
+}
+
+/*when the input field is clicked...*/
+.todo-input:focus {
+    /*...the outline, box-shadow, border 
+    and outline are removed.*/
+    outline: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    /*lowers the opacity of the placeholder text*/
+    opacity: 30%;
+    /*only affect placeholder, not the items themselves*/
+    font-style: italic;
+}
+
+/*when user clicks the check button/icon, 
+it's struck through & the opacity is lowered
+(to indicate it's finished)*/
+.checksout {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/*SWEETALERT ALERT STYLING*/
+.swal-overlay {
+    background-color: #00000062;
+}
+
+.swal-text {
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+}
+
+.swal-title {
+    font-weight: 1000;
+    font-size: 17px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+
+    color: black;
+}
